@@ -33,7 +33,7 @@
     `(,code (:content-type ,content-type) (,result-string))))
 
 (defun test-mem-leak ()
-  (with-timeout (2)
+  (with-timeout (1)
     (drakma:http-request "http://8.8.8.8")))
 
 (defun process-command (command)
